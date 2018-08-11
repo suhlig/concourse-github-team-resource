@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
+
+require 'concourse/github-team-resource/check'
+require 'json'
+begin
+  input = JSON.parse(STDIN.read)
+  script = Concourse::GitHubTeamResource::Check.new
+  output = script.call(input['source'], input['version'])
+  puts JSON.generate(output)
+rescue StandardError => e
+  warn "Error processing team: #{e.message}"
+  exit 1
+end

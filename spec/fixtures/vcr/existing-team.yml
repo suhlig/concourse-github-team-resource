@@ -1,0 +1,238 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/orgs/uhlig-it
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.9.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <REDACTED>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 11 Aug 2018 19:03:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4892'
+      X-Ratelimit-Reset:
+      - '1534016514'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"82a48ef2bf18e315536d3489e494d90d"
+      Last-Modified:
+      - Mon, 23 Jul 2018 04:15:06 GMT
+      X-Oauth-Scopes:
+      - read:org
+      X-Accepted-Oauth-Scopes:
+      - admin:org, read:org, repo, user, write:org
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Runtime-Rack:
+      - '0.047236'
+      X-Github-Request-Id:
+      - FEDB:1F06:31F8A6E:6071853:5B6F331F
+    body:
+      encoding: ASCII-8BIT
+      string: '{"login":"uhlig-it","id":4368152,"node_id":"MDEyOk9yZ2FuaXphdGlvbjQzNjgxNTI=","url":"https://api.github.com/orgs/uhlig-it","repos_url":"https://api.github.com/orgs/uhlig-it/repos","events_url":"https://api.github.com/orgs/uhlig-it/events","hooks_url":"https://api.github.com/orgs/uhlig-it/hooks","issues_url":"https://api.github.com/orgs/uhlig-it/issues","members_url":"https://api.github.com/orgs/uhlig-it/members{/member}","public_members_url":"https://api.github.com/orgs/uhlig-it/public_members{/member}","avatar_url":"https://avatars2.githubusercontent.com/u/4368152?v=4","description":"","name":"uhlig.it","company":null,"blog":"","location":null,"email":"","is_verified":false,"has_organization_projects":true,"has_repository_projects":true,"public_repos":3,"public_gists":0,"followers":0,"following":0,"html_url":"https://github.com/uhlig-it","created_at":"2013-05-07T18:19:18Z","updated_at":"2018-07-23T04:15:06Z","type":"Organization","total_private_repos":20,"owned_private_repos":20,"private_gists":null,"disk_usage":null,"collaborators":null,"billing_email":null,"plan":{"name":"team","space":976562499,"private_repos":99999,"filled_seats":6,"seats":5},"default_repository_permission":null,"members_can_create_repositories":false,"two_factor_requirement_enabled":null}'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2018 19:03:59 GMT
+- request:
+    method: get
+    uri: https://api.github.com/organizations/4368152/teams
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.9.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <REDACTED>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 11 Aug 2018 19:04:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4891'
+      X-Ratelimit-Reset:
+      - '1534016514'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"2428f6cf6a66ffead2fa3523b05a4819"
+      X-Oauth-Scopes:
+      - read:org
+      X-Accepted-Oauth-Scopes:
+      - admin:org, read:org, repo, user, write:org
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Runtime-Rack:
+      - '0.030103'
+      X-Github-Request-Id:
+      - FEDC:1F06:31F8AB2:60718D8:5B6F331F
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"Owners","id":401313,"node_id":"MDQ6VGVhbTQwMTMxMw==","slug":"owners","description":null,"privacy":"secret","url":"https://api.github.com/teams/401313","members_url":"https://api.github.com/teams/401313/members{/member}","repositories_url":"https://api.github.com/teams/401313/repos","permission":"admin"},{"name":"Concourse
+        GitHub Team Resource Testers","id":2868152,"node_id":"MDQ6VGVhbTI4NjgxNTI=","slug":"concourse-github-team-resource-testers","description":"Test
+        Team for the Concourse GitHub Team Resource","privacy":"closed","url":"https://api.github.com/teams/2868152","members_url":"https://api.github.com/teams/2868152/members{/member}","repositories_url":"https://api.github.com/teams/2868152/repos","permission":"pull"},{"name":"Pipelines","id":2454655,"node_id":"MDQ6VGVhbTI0NTQ2NTU=","slug":"pipelines","description":"","privacy":"secret","url":"https://api.github.com/teams/2454655","members_url":"https://api.github.com/teams/2454655/members{/member}","repositories_url":"https://api.github.com/teams/2454655/repos","permission":"pull"},{"name":"Students","id":631683,"node_id":"MDQ6VGVhbTYzMTY4Mw==","slug":"students","description":null,"privacy":"secret","url":"https://api.github.com/teams/631683","members_url":"https://api.github.com/teams/631683/members{/member}","repositories_url":"https://api.github.com/teams/631683/repos","permission":"push"}]'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2018 19:04:00 GMT
+- request:
+    method: get
+    uri: https://api.github.com/teams/2868152
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.v3+json
+      User-Agent:
+      - Octokit Ruby Gem 4.9.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - token <REDACTED>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sat, 11 Aug 2018 19:04:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4890'
+      X-Ratelimit-Reset:
+      - '1534016514'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - W/"945213f5e77f84a7b1dfcea35fd03e1a"
+      Last-Modified:
+      - Sat, 11 Aug 2018 17:23:54 GMT
+      X-Oauth-Scopes:
+      - read:org
+      X-Accepted-Oauth-Scopes:
+      - admin:org, read:org, repo, user, write:org
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Runtime-Rack:
+      - '0.031985'
+      X-Github-Request-Id:
+      - FEDE:1F06:31F8B1D:607198E:5B6F3320
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"Concourse GitHub Team Resource Testers","id":2868152,"node_id":"MDQ6VGVhbTI4NjgxNTI=","slug":"concourse-github-team-resource-testers","description":"Test
+        Team for the Concourse GitHub Team Resource","privacy":"closed","url":"https://api.github.com/teams/2868152","members_url":"https://api.github.com/teams/2868152/members{/member}","repositories_url":"https://api.github.com/teams/2868152/repos","permission":"pull","created_at":"2018-08-11T17:23:54Z","updated_at":"2018-08-11T17:23:54Z","members_count":1,"repos_count":0,"organization":{"login":"uhlig-it","id":4368152,"node_id":"MDEyOk9yZ2FuaXphdGlvbjQzNjgxNTI=","url":"https://api.github.com/orgs/uhlig-it","repos_url":"https://api.github.com/orgs/uhlig-it/repos","events_url":"https://api.github.com/orgs/uhlig-it/events","hooks_url":"https://api.github.com/orgs/uhlig-it/hooks","issues_url":"https://api.github.com/orgs/uhlig-it/issues","members_url":"https://api.github.com/orgs/uhlig-it/members{/member}","public_members_url":"https://api.github.com/orgs/uhlig-it/public_members{/member}","avatar_url":"https://avatars2.githubusercontent.com/u/4368152?v=4","description":"","name":"uhlig.it","company":null,"blog":"","location":null,"email":"","is_verified":false,"has_organization_projects":true,"has_repository_projects":true,"public_repos":3,"public_gists":0,"followers":0,"following":0,"html_url":"https://github.com/uhlig-it","created_at":"2013-05-07T18:19:18Z","updated_at":"2018-07-23T04:15:06Z","type":"Organization"}}'
+    http_version: 
+  recorded_at: Sat, 11 Aug 2018 19:04:00 GMT
+recorded_with: VCR 4.0.0
