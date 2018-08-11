@@ -7,11 +7,11 @@ shared_examples 'check' do
     let(:input) do
       {
         "source": {
-          "organization" => 'uhlig-it',
-          "team" => 'does not exist',
+          'organization' => 'uhlig-it',
+          'team' => 'does not exist',
           "access_token": ENV.fetch('GITHUB_TOKEN')
         },
-        "version": { "updated_at" => '2017-08-17 12:37:15 UTC' }
+        "version": { 'updated_at' => '2017-08-17 12:37:15 UTC' }
       }
     end
 
@@ -34,8 +34,8 @@ shared_examples 'check' do
     let(:input) do
       {
         "source": {
-          "organization" => 'uhlig-it',
-          "team" => 'Concourse GitHub Team Resource Testers',
+          'organization' => 'uhlig-it',
+          'team' => 'Concourse GitHub Team Resource Testers',
           "access_token": ENV.fetch('GITHUB_TOKEN')
         },
         "version": nil
@@ -53,11 +53,11 @@ shared_examples 'check' do
     let(:input) do
       {
         "source": {
-          "organization" => 'uhlig-it',
-          "team" => 'Concourse GitHub Team Resource Testers',
+          'organization' => 'uhlig-it',
+          'team' => 'Concourse GitHub Team Resource Testers',
           "access_token": ENV.fetch('GITHUB_TOKEN')
         },
-        "version": { "updated_at" => '2017-08-17 12:37:15 UTC' }
+        "version": { 'updated_at' => '2017-08-17 12:37:15 UTC' }
       }
     end
 

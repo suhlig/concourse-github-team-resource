@@ -8,11 +8,11 @@ describe 'when `in` is executed directly', type: 'aruba' do
   let(:input) do
     {
       "source": {
-        "organization" => 'uhlig-it',
-        "team" => 'Concourse GitHub Team Resource Testers',
+        'organization' => 'uhlig-it',
+        'team' => 'Concourse GitHub Team Resource Testers',
         "access_token": ENV.fetch('GITHUB_TOKEN')
       },
-      "version": { "updated_at" => '2017-08-17 12:37:15 UTC' }
+      "version": { 'updated_at' => '2017-08-17 12:37:15 UTC' }
     }
   end
 
