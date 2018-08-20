@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/suhlig/concourse-github-team-resource.svg?branch=master)](https://travis-ci.org/suhlig/concourse-github-team-resource)
 
-[Concourse](https://concourse-ci.org/ "Concourse Homepage") [resource](https://concourse-ci.org/implementing-resources.html "Implementing a Resource") for GitHub Teams. It fires if a GitHub team was updated.
+[Concourse](https://concourse-ci.org/ "Concourse Homepage") [resource](https://concourse-ci.org/implementing-resources.html "Implementing a Resource") for GitHub Teams. It fires when a GitHub team was updated.
 
 # Resource Type Configuration
 
@@ -17,8 +17,8 @@ resource_types:
 
 # Source Configuration
 
-* `organization`: *Required.* Name of the organization the team belongs to
-* `team`: *Required.* Name of the team to track
+* `organization`: *Required* Name of the organization the team belongs to
+* `team`: *Required* Name of the team to track
 * `access_token`: *Required* the [OAuth access token](http://developer.github.com/v3/oauth/) that should be used for authenticated access to GitHub
 * `api_endpoint`: *Optional* API endpoint if different than `https://api.github.com`, e.g. `https://github.example.com/api/v3/`
 
